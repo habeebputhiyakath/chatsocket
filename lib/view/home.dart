@@ -1,12 +1,14 @@
 import 'dart:io';
 
-import 'package:chatsocket/model/message.dart';
-import 'package:chatsocket/providers/home.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:intl/intl.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
 import 'package:provider/provider.dart';
+
+import '../controller/home_provider.dart';
+import '../model/message.dart';
 
 class HomeScreen extends StatefulWidget {
   final String username;
@@ -43,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    //Important: If your server is running on localhost and you are testing your app on Android then replace http://localhost:3000 with http://10.0.2.2:3000
+   
     _socket = IO.io(
       Platform.isIOS ? 'http://localhost:3000' : 'http://10.0.2.2:3000',
       IO.OptionBuilder().setTransports(['websocket']).setQuery(
@@ -62,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter Socket.IO'),
+       
       ),
       body: Column(
         children: [

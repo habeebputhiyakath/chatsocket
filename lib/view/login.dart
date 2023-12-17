@@ -1,6 +1,6 @@
-import 'package:chatsocket/providers/home.dart';
-import 'package:chatsocket/providers/login.dart';
-import 'package:chatsocket/screens/home.dart';
+import 'package:chatsocket/controller/home_provider.dart';
+import 'package:chatsocket/controller/login_provider.dart';
+import 'package:chatsocket/view/home.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
