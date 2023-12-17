@@ -1,8 +1,9 @@
 import 'dart:io';
 
+import 'package:chatsocket/model/message.dart';
+import 'package:chatsocket/providers/home.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_socket_io/model/message.dart';
-import 'package:flutter_socket_io/providers/home.dart';
+
 import 'package:intl/intl.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
 import 'package:provider/provider.dart';

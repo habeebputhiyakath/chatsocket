@@ -1,7 +1,8 @@
+import 'package:chatsocket/providers/home.dart';
+import 'package:chatsocket/providers/login.dart';
+import 'package:chatsocket/screens/home.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_socket_io/providers/home.dart';
-import 'package:flutter_socket_io/providers/login.dart';
-import 'package:flutter_socket_io/screens/home.dart';
+
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {

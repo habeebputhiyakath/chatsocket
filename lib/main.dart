@@ -1,6 +1,7 @@
+import 'package:chatsocket/providers/login.dart';
+import 'package:chatsocket/screens/login.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_socket_io/providers/login.dart';
-import 'package:flutter_socket_io/screens/login.dart';
+
 import 'package:provider/provider.dart';
 
 void main() {
