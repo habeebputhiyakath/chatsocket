@@ -54,10 +54,12 @@ class _HomeScreenState extends State<HomeScreen> {
     _connectSocket();
   }
 
+
   @override
   void dispose() {
     _messageInputController.dispose();
     super.dispose();
+    
   }
 
   @override
